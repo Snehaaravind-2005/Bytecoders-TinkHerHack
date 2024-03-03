@@ -1,5 +1,5 @@
 //  Initializing variables
-var defaultCertPNG = "certificates/dummy.png";
+var defaultCertPNG = "certificates/temp1.png";
 var defaultFontSize = 20;
 var defaultFont = "Arial";
 var defaultColor = "black";
@@ -267,8 +267,19 @@ downloadButton.addEventListener("click", function () {
     link.href = image;
     link.click();
   } else if (downloadType == "pdf") {
-    var pdf = new jsPDF();
-    pdf.addImage(canvas.toDataURL("image/png"), "PNG", 0, 0);
+    // Create new jsPDF instance
+    var pdf = new jsPDF('landscape');
+    
+    // Set canvas dimensions for PDF (landscape mode)
+    var canvasWidth = canvas.width;
+    var canvasHeight = canvas.height;
+    var pdfWidth = pdf.internal.pageSize.getWidth();
+    var pdfHeight = (canvasHeight * pdfWidth) / canvasWidth;
+
+    // Add canvas content to PDF
+    pdf.addImage(canvas.toDataURL("image/png"), "PNG", 0, 0, pdfWidth, pdfHeight);
+    
+    // Save PDF file
     pdf.save("certificate.pdf");
   }
 });

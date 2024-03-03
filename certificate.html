@@ -69,37 +69,40 @@
 
       <div>
         <div id="containerdiv">
-          <div id="certificatediv">
-            <canvas id="certificatecanvas"></canvas>
-          </div>
-          <div class="downloadcontainer downloadfile">
-            <div>
-              Download as:
-              <select id="downloadtype">
-                <option value="png">PNG</option>
-                <option value="jpg">JPG</option>
-                <option value="pdf">PDF</option>
-              </select>
+            <div id="certificatediv">
+              <canvas id="certificatecanvas"></canvas>
             </div>
-            <div>
-              <button id="downloadbutton" class="button">Download</button>
+            <div class="downloadcontainer downloadfile">
+              <div>
+                Download as:
+                <select id="downloadtype">
+                  <option value="png">PNG</option>
+                  <option value="jpg">JPG</option>
+                  <option value="pdf">PDF</option>
+                </select>
+              </div>
+              <div>
+                <button id="downloadbutton" class="button">Download</button>
+              </div>
+            </div>
+            <div class="downloadcontainer downloadzip">
+              <button id="downloadzipbutton" class="button">Download Zip</button>
             </div>
           </div>
-          <div class="downloadcontainer downloadzip">
-            <button id="downloadzipbutton" class="button">Download Zip</button>
-          </div>
-        </div>
         <div id="asidebar">
 
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <button onclick="myFunction()" class="dropbtn">Choose a template</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="#">Template 1</a>
+                  <a href="#">Template 2</a>
+                  <a href="#">Template 3</a>
                 </div>
             </div>
+
+
           <div id="editor"></div>
+
           <div class="uploadcontainer">
             <!-- Limit only Image Files -->
             <label class="button uploadlabel">
