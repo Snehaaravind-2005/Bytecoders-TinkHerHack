@@ -16,11 +16,11 @@ Certificate Generator is a web application built with JavaScript, HTML, and CSS 
 ## Installation
 
 1. Clone or download this repository to your local machine.
-2. Open the `index.html` file in your web browser.
+2. Open the `homepage.html` file in your web browser.
 
 ## Usage
 
-1. Open the `index.html` file in your web browser.
+1. Open the `homepage.html` file in your web browser.
 2. Choose a template from the provided options or upload your own template.
 3. Customize the certificate by adjusting font, size, color, bold, and italics using the toolbar.
 4. Use the data entry area to upload CSV or Excel files containing the certificate data.
@@ -34,21 +34,27 @@ Certificate Generator is a web application built with JavaScript, HTML, and CSS 
 Within the download you'll find the following directories and files:
 
 certificate-generator
- ├──README.md
- ├──script_upload.js
- ├── script1.js
- |── script2.js
- │── style.css
- ├── certificate1.html
- ├──certificate2.html
- ├──homepage.html
- ├──upload.html
+                                    
+├──README.md
+
+├──script_upload.js
+
+├── script1.js
+
+|── script2.js
+
+│── style.css
+
+├── certificate1.html
+
+├──certificate2.html
+
+├──homepage.html
+
+├──upload.html
 
 
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
