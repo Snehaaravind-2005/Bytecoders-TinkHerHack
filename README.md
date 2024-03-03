@@ -39,13 +39,13 @@ certificate-generator
 
 ├──script_upload.js
 
-├── script1.js
+├──script1.js
 
-|── script2.js
+├──script2.js
 
-│── style.css
+├──style.css
 
-├── certificate1.html
+├──certificate1.html
 
 ├──certificate2.html
 
